@@ -1,10 +1,11 @@
 import { GameObject } from "@eva/eva.js";
 import { Physics, PhysicsType } from "@eva/plugin-matterjs";
 import { SpriteAnimation } from "@eva/plugin-renderer-sprite-animation";
+import GameComponent from "../Components/Game";
 import Jump from "../Components/Jump";
 import PlayerAction from "../Components/PlayerAction";
 const Player = () => {
-    const player = new GameObject("dino", {
+    const player = new GameObject("player", {
         size: { width: 47, height: 50 },
         origin: { x: 0.5, y: 0.5 },
         position: {
@@ -32,6 +33,7 @@ const Player = () => {
 
     player.addComponent(new Jump())
     player.addComponent(new PlayerAction())
+    player.addComponent(new GameComponent())
 
     const playerPhysics = player.addComponent(new Physics({
         type: PhysicsType.RECTANGLE,

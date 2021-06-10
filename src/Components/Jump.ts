@@ -4,7 +4,7 @@ import { Physics } from "@eva/plugin-matterjs";
 
 export default class Jump extends Component {
     gameObject: any;
-    static componentName = "enemy";
+    static componentName = "jump";
     //   init(obj: any) {
     //     Object.assign(this, obj);
     //   }
