@@ -7,8 +7,12 @@ const Cacuts = () => {
         size: { width: 80 / 4, height: 132 / 4 },
         origin: { x: 0.5, y: 0.5 },
         position: {
-            x: 300,
-            y: 190
+            x: 640,
+            y: 290
+        },
+        scale: {
+            x: 2,
+            y: 2
         },
         anchor: {
             x: 0,
@@ -31,7 +35,7 @@ const Cacuts = () => {
             friction: 0,
             frictionStatic: 0,
             force: {
-                x: -0.01,
+                x: -0.05,
                 y: 0,
             },
             stopRotation: true, // default false, usually do not need to be set

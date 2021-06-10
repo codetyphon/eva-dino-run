@@ -15,12 +15,12 @@ import GameComponent from '../Components/Game';
 import { Sprite } from '@eva/renderer-adapter';
 import Player from './player';
 const GameOver = () => {
-    const gameOver = new GameObject("cacuts", {
-        size: { width: 200, height: 20 },
+    const gameOver = new GameObject("GameOver", {
+        size: { width: 400, height: 40 },
         origin: { x: 0.5, y: 0.5 },
         position: {
-            x: 150,
-            y: 100
+            x: 320,
+            y: 160
         },
         anchor: {
             x: 0,

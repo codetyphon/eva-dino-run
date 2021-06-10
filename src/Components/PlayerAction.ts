@@ -20,7 +20,8 @@ export default class PlayerAction extends Component {
         // // console.log(x)
         // this.gameObject.transform.position.x-=10
         if (x <= -5) {
-            console.log('gameover', this.gameObject.scene.addChild(GameOver()))
+            // console.log('gameover', this.gameObject.scene.addChild(GameOver()))
+            this.gameObject.scene.addChild(GameOver())
             // this.gameObject.destroy()
             const gameComponent: GameComponent = this.gameObject.getComponent("GameComponent")
             const g: any = gameComponent.game

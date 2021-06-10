@@ -10,11 +10,11 @@ const Player = () => {
         origin: { x: 0.5, y: 0.5 },
         position: {
             x: 50,
-            y: 170,
+            y: 270,
         },
         scale: {
-            x: 0.5,
-            y: 0.5
+            x: 1,
+            y: 1
         },
         anchor: {
             x: 0,

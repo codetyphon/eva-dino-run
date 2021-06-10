@@ -3,11 +3,11 @@ import { Physics, PhysicsType } from "@eva/plugin-matterjs";
 import { Img } from "@eva/plugin-renderer-img";
 const Floor = () => {
     const floor = new GameObject("floor", {
-        size: { width: 600, height: 2 },
+        size: { width: 640, height: 2 },
         origin: { x: 0.5, y: 0.5 },
         position: {
-            x: 150,
-            y: 195,
+            x: 320,
+            y: 310,
         },
         anchor: {
             x: 0,

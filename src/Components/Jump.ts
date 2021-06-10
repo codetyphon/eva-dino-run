@@ -16,7 +16,7 @@ export default class Jump extends Component {
     jump() {
         this.gameObject.getComponent("SpriteAnimation").stop()
         if (this.onfloor) {
-            this.gameObject.getComponent(Physics).body.force.y = -0.02
+            this.gameObject.getComponent(Physics).body.force.y = -0.1
             this.onfloor = false
         }
     }

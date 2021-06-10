@@ -32,8 +32,8 @@ const game = new Game({
   systems: [
     new RendererSystem({
       canvas: document.querySelector("#canvas"),
-      width: 300,
-      height: 200,
+      width: 640,
+      height: 320,
       // antialias: true,
     }),
     new ImgSystem(),
