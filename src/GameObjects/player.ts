@@ -1,4 +1,4 @@
-import { GameObject } from "@eva/eva.js";
+import { Component, GameObject } from "@eva/eva.js";
 import { Physics, PhysicsType } from "@eva/plugin-matterjs";
 import { SpriteAnimation } from "@eva/plugin-renderer-sprite-animation";
 import GameComponent from "../Components/Game";
@@ -57,6 +57,12 @@ const Player = () => {
             frame.play();
         }
     });
+    player.addComponent(new class Update extends Component {
+        update() {
+            playerPhysics.body.angle = 0
+        }
+    })
+
     return player
 }
 
