@@ -47,8 +47,8 @@ const Player = () => {
                 x: 0,
                 y: 0,
             },
-            stopRotation: true,
         },
+        stopRotation: true,
     }))
     playerPhysics.on('collisionStart', (body, gameObject1, gameObject2) => {
         // body is the target
@@ -57,11 +57,6 @@ const Player = () => {
             frame.play();
         }
     });
-    player.addComponent(new class Update extends Component {
-        update() {
-            playerPhysics.body.angle = 0
-        }
-    })
 
     return player
 }
