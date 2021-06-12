@@ -1,4 +1,4 @@
-import { GameObject } from "@eva/eva.js";
+import { Component, GameObject } from "@eva/eva.js";
 import { Physics, PhysicsType } from "@eva/plugin-matterjs";
 import { SpriteAnimation } from "@eva/plugin-renderer-sprite-animation";
 import GameComponent from "../Components/Game";
@@ -47,8 +47,8 @@ const Player = () => {
                 x: 0,
                 y: 0,
             },
-            stopRotation: true,
         },
+        stopRotation: true,
     }))
     playerPhysics.on('collisionStart', (body, gameObject1, gameObject2) => {
         // body is the target
@@ -57,6 +57,7 @@ const Player = () => {
             frame.play();
         }
     });
+
     return player
 }
 
